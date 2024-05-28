@@ -2,6 +2,14 @@
 
 [ALLOSAUR](https://eprint.iacr.org/2022/1362/) is a pairing-based accumulator with good anonymity properties. This is a proof-of-concept implementation of the single-server functionality of ALLOSAUR and a multi-server threshold update process.
 
+# Credits
+
+ALLOSAUR is a joint work of Sam Jaques, Mike Lodder, and Hart Montgomery.
+
+This repository is a fork of the ALLOSAUR team's original proof-of-concept implementation, which draws very heavily from Mike Lodder's [accumulator implementation](https://github.com/mikelodder7/accumulator-rs).
+
+This fork is used internally by Veracity Labs, we can not take credit for the excellence of the ALLOSAUR scheme, and we can not guarantee that our modifications are an improvement on the original work. 
+
 ## Current Features
 
 - a single server object to maintain an accumulator and accumulated
@@ -51,17 +59,11 @@ The benchmarks cover three different methods to anonymously update a user's witn
 
 The parameters to these benchmarks are in `benches/updates.rs`.
 
-# Credits
-
-ALLOSAUR is a joint work of Sam Jaques, Mike Lodder, and Hart Montgomery.
-
-This repository draws heavily from Mike Lodder's [accumulator implementation](https://github.com/mikelodder7/accumulator-rs).
-
 # License
 
 MIT License
 
-Copyright 2022 Sam Jaques, Mike Lodder, and Hart Montgomery.
+Copyright, 2024: Veracity Labs, Sam Jaques, Mike Lodder, and Hart Montgomery.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
